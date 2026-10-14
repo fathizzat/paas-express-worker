@@ -26,6 +26,14 @@ app.get("/api/info", (req, res) => {
   });
 });
 
+app.get("/api/log-test", (req, res) => {
+  console.log("Endpoint /api/log-test dipanggil");
+
+  res.json({
+    logged: true
+  });
+});
+
 app.listen(3000);
 
 export default httpServerHandler({ port: 3000 });
