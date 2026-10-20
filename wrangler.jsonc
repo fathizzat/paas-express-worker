@@ -7,10 +7,18 @@
 	"name": "paas-express-worker",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-10-06",
+	"compatibility_flags": ["nodejs_compat"],
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "paas-students-db",
+			"database_id": "434927f6-9a29-40bc-a095-f822ba0e7fdb"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
